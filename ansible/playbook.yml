@@ -1,0 +1,9 @@
+---
+- name: Instalar Apache, Mysql y mover ficheros
+  hosts: "my"
+  become: true
+  become_user: root
+  roles:
+    - geerlingguy.apache
+    - geerlingguy.mysql
+    - copiar
