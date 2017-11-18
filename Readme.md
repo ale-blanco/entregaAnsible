@@ -1,0 +1,1 @@
+Para provision en produccion añadir el archivo pruebas.pem a ansible/files y luego ejecutar ansible/provisionPro
