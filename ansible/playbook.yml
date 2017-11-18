@@ -3,7 +3,18 @@
   hosts: "my"
   become: true
   become_user: root
+
+  pre_tasks:
+    - name: Desactivar el firewall sin uso en local y en ec2 usamos el propio de aws
+      service:
+        name: iptables
+        state: stopped
+
   roles:
-    - geerlingguy.apache
+    - role: geerlingguy.apache
+      apache_vhosts:
+      - servername: "ablanco.ml"
+        documentroot: "/var/www/html"
     - geerlingguy.mysql
     - copiar
+

@@ -1,0 +1,4 @@
+/.idea
+/ansible/files/pruebas.pem
+/.vagrant
+/ansible/playbook.retry
