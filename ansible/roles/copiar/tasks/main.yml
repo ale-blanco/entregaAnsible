@@ -1,6 +1,6 @@
 - name: Copiar primer fichero
-  copy: src=files/file.n1 dest=/tmp/file.n1
+  copy: src=files/file.n1 dest={{ copiar_directorio_files }}/file.n1
 
 - name: Copiar segundo fichero
-  copy: src=files/file.n2 dest=/tmp/file.n2
+  copy: src=files/file.n2 dest={{ copiar_directorio_files }}/file.n2
 

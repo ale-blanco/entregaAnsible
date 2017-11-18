@@ -1,2 +1,5 @@
 [my]
 127.0.0.1
+
+[my:vars]
+copiar_directorio_files = "/tmp"
