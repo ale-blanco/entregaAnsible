@@ -1,10 +1,6 @@
 - name: Copiar primer fichero
-  vars:
-    - contenido: Contenido fichero 1
-  template: src=files/file.n dest=/tmp/file.n1
+  copy: src=files/file.n1 dest=/tmp/file.n1
 
 - name: Copiar segundo fichero
-  vars:
-    - contenido: Contenido fichero 2
-  template: src=files/file.n dest=/tmp/file.n2
+  copy: src=files/file.n2 dest=/tmp/file.n2
 
