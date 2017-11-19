@@ -13,7 +13,7 @@
   roles:
     - role: geerlingguy.apache
       apache_vhosts:
-      - servername: "ablanco.ml"
+      - servername: "ablanco.sp.gl"
         documentroot: "/var/www/html"
     - geerlingguy.mysql
     - copiar
